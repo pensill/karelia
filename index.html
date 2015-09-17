@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Карелия Тур</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="HandheldFriendly" content="true">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/tcal.css">
+  <link rel="stylesheet" type="text/css" href="css/jquery.formstyler.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/slick.js"></script>
+  <script src="js/tcal.js"></script>
+  <script src="js/jquery.formstyler.js"></script>
+  <script src="js/script.js"></script>
+</head>
+<body>
+  <header class="page-header">
+    <div class="hamburger">
+      <div class="hamburger__item"></div>
+      <div class="hamburger__item"></div>
+      <div class="hamburger__item"></div>
+    </div>
+    <nav class="main-nav">
+      <ul class="main-nav__list">
+        <li class="main-nav__item"><a href="">Главная</a></li>
+        <li class="main-nav__item"><a href="">Туры</a></li>
+        <li class="main-nav__item"><a href="">Партнеры</a></li>
+        <li class="main-nav__item"><a href="">Агенствам</a></li>
+        <li class="main-nav__item"><a href="">Контакты</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="preview">
+    <div class="preview__logo">
+      <a href="#"><img src="img/logo.png"></a>
+    </div>
+    <a href="#info" class="preview__btn-down" id="preview__btn-down"></a>
+  </section>
+  <section id="info" class="info">
+    <div class="calculator">
+      <ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
+        <li class="active"><a href="#karelia" data-toggle="tab">КАРЕЛИЯ</a></li>
+        <li><a href="#karelia_spb" data-toggle="tab">КАРЕЛИЯ + СПБ</a></li>
+      </ul>
+      <div id="my-tab-content" class="tab-content">
+          <div class="tab-pane active" id="karelia">
+              <form class="form">
+                <div class="form__item">
+                  <label for="calendar">Когда</label>
+                  <input id="calendar" type="text" name="date" class="tcal" value="17.09.2015" />
+                </div>
+                <div class="form__item">
+                  <label for="tour">Тур</label>
+                  <select id="tour">
+                    <option value="">Север</option>
+                    <option value="">Юг</option>
+                    <option value="">Запад</option>
+                    <option value="">Восток</option>
+                  </select>
+                </div>
+                <div class="form__item">
+                  <label class="people-label" for="people">Сколько человек</label>
+                  <input id="people" type="text"/>
+                </div>
+                <div class="form__item">
+                  <input type="submit" value="Искать">
+                </div>
+              </form>
+          </div> <!-- tab-pane end -->
+          <div class="tab-pane" id="karelia_spb">
+              <h1>Orange</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div> <!-- tab-pane end -->
+      </div> <!-- tab-content end -->
+    </div> <!-- calculator end -->
+    <h1>Наши туры</h1>
+    <div class="slider" id="slider">
+      <img src="http://placehold.it/350x400">
+      <img src="http://placehold.it/350x400">
+      <img src="http://placehold.it/350x400">
+      <img src="http://placehold.it/350x400">
+      <img src="http://placehold.it/350x400">
+      <img src="http://placehold.it/350x400">
+      <img src="http://placehold.it/350x400">
+      <img src="http://placehold.it/350x400">
+    </div>
+  </section>
+  <section class="request">
+    <div class="feedback__container">
+      <h1>Закажите обратный звонок</h1>
+      <a href="#myModal" class="request__btn" data-toggle="modal">Заказать</a>
+    </div>
+  </section>
+</body>
+</html>
